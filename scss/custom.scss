@@ -6,13 +6,31 @@ $primary:red;
 
 .parrafo-color{
 color: $color-p;
+text-align: left;
 }
 
-.img-custom {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
+
+.my-image {
+    width: 100px;
+    height: 100px;
     object-fit: cover;
+   
+    @media (max-width: 768px) {
+      width: 100%;
+      height: auto;
+    }
+}
+
+.my-element {
+    // Estilos básicos
+    position: relative;
+    right: 10px;
+    
+    @media (max-width: 768px) {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 
   

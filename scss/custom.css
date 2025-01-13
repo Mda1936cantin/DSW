@@ -9783,12 +9783,30 @@ textarea.form-control-lg {
 }
 .parrafo-color {
   color: white;
+  text-align: left;
 }
 
-.img-custom {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
+.my-image {
+  width: 100px;
+  height: 100px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media (max-width: 768px) {
+  .my-image {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.my-element {
+  position: relative;
+  right: 10px;
+}
+@media (max-width: 768px) {
+  .my-element {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }/*# sourceMappingURL=custom.css.map */
