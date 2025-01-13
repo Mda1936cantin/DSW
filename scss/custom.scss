@@ -1,0 +1,20 @@
+@import "bootstrap";
+@import "_variables.scss";
+
+$color-p:white;
+$primary:red;
+
+.parrafo-color{
+color: $color-p;
+}
+
+.img-custom {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  
+
+  
