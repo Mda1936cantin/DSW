@@ -9,10 +9,19 @@ $color-p:white;
 $primary:red;
 $color-footer:gray;
 
-.parrafo-color{   
+.parrafo-color{ 
+text-align: center; 
+align-content: center;   
 color: $color-p;
 }
 
+.parrafo-color-p{ 
+  text-align: center; 
+  align-content: center;   
+  padding-left: 5%;
+  padding-right: 5%;
+  color: $color-p;
+  }
 
 .body-background{
  background-image: url(../Imagenes/background.jpg);
