@@ -15,7 +15,7 @@
     </head>
 
 <body style="background-color: black;">
-  <nav>  
+   
     <!-- 
     <button id="agregarProducto">Agregar Producto</button>                
     <button onclick="agregarAlCarrito({ nombre: 'Camiseta', precio: 20 })">Agregar al carrito</button>
@@ -26,7 +26,6 @@
 
     <div class="container-fluid m-0 p-0">        
       <div class="row">
-
         <div class="col-12 order-md-2">
           <nav class="navbar navbar-expand-sm navbar-light bg-primary ">
             <div class="container-fluid">
@@ -36,19 +35,18 @@
                 <span class="navbar-toggler-icon"></span>
               </button>
 
-              <form class="d-block d-sm-none">                              
+               <form class="d-md-inline d-md-none">                              
                 <img src="Imagenes/carro de compras.png" alt="carro de compras">                         
               </form>
 
-
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item"><a href="secciones/empresa.html"><button type="button" class="btn btn-primary" data-bs-toggle="tooltip" title="Descubre todo sobre nuestra empresa y nuestra historia, desde aqui">La Empresa</button></a></li>
-                  <li class="nav-item"><a href="secciones/empresa.html"><button type="button" class="btn btn-primary" data-bs-toggle="tooltip" title="Ingresa a nuestra lista de productos y personalizaciones, desde aqui">Productos</button></a></li>
-                  <li class="nav-item"><a href="secciones/empresa.html"><button type="button" class="btn btn-primary" data-bs-toggle="tooltip" title="Descubre nuestras promociones bancarias y financieras, desde aqui">Promociones</button></a></li>
-                  <li class="nav-item"><a href="secciones/empresa.html"><button type="button" class="btn btn-primary" data-bs-toggle="tooltip" title="Para contactarnos utliliza el siguiente formulario, desde aqui">Contacto</button></a></li>
-                </ul>
-                <form class="d-none d-sm-flex">
+                  <li class="nav-item"><a href="secciones/empresa.html"><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="tooltip" title="Descubre todo sobre nuestra empresa y nuestra historia, desde aqui">La Empresa</button></a></li>
+                  <li class="nav-item"><a href="secciones/empresa.html"><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="tooltip" title="Ingresa a nuestra lista de productos y personalizaciones, desde aqui">Productos</button></a></li>
+                  <li class="nav-item"><a href="secciones/empresa.html"><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="tooltip" title="Descubre nuestras promociones bancarias y financieras, desde aqui">Promociones</button></a></li>
+                  <li class="nav-item"><a href="secciones/contacto.html"><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="tooltip" title="Para contactarnos utliliza el siguiente formulario, desde aqui">Contacto</button></a></li>
+                 </ul> 
+                  <form class="d-none d-md-flex">
                   <input class="form-control me-2 form-control-sm" type="search" placeholder="Search" aria-label="Search">
                   <button class="btn btn-outline-success btn-sm" type="submit" data-bs-toggle="tooltip" title="Buscador de productos">Buscar</button>                                    
                  <!-- 
@@ -57,8 +55,13 @@
                  -->
                                                
                   <img src="Imagenes/carro de compras.png" alt="carro de compras">
-                </form>
+                </form> 
+                
+                
               </div>
+
+             
+
             </div>
           </nav> 
         </div>
@@ -94,8 +97,25 @@
     
       </div>     
     </div> 
-  </nav>
-  <header>  
+
+  <header>
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">¡Atención!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Este es un anuncio importante. ¡No te lo pierdas!</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary">Más información</button>
+          </div>
+        </div>
+      </div>
+    </div>  
   </header> 
   <section>
     <article>
@@ -192,5 +212,12 @@
 <!-- Bootstrap JavaScript Libraries -->
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/miScript.js"></script>
-</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+  $(document).ready(function() {
+      $('#staticBackdrop').modal('show');
+  });
+  </script>
+
 </html>
