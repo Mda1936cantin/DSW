@@ -10,8 +10,8 @@ $primary:red;
 $color-footer:gray;
 
 .parrafo-color{ 
-text-align: center; 
-align-content: center;   
+text-align:start; 
+align-content: start;   
 color: $color-p;
 }
 
@@ -37,11 +37,9 @@ color: $color-p;
 h7 {
   @include header-styles;
   color: $color-footer;
-  margin-bottom: 2rem;
   align-content: start;
-  text-align: left;
+  text-align: start;
   align-items: start;
-  
   // Pseudo-clase para el estado :hover
   &:hover {
     color: #494848;

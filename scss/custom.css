@@ -18225,16 +18225,8 @@ progress {
   }
 }
 .parrafo-color {
-  text-align: center;
-  align-content: center;
-  color: white;
-}
-
-.parrafo-color-p {
-  text-align: center;
-  align-content: center;
-  padding-left: 5%;
-  padding-right: 5%;
+  text-align: start;
+  align-content: start;
   color: white;
 }
 
@@ -18247,9 +18239,8 @@ h7 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   color: gray;
-  margin-bottom: 2rem;
   align-content: start;
-  text-align: left;
+  text-align: start;
   align-items: start;
 }
 h7:hover {

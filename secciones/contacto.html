@@ -11,7 +11,13 @@
         <!-- Bootstrap CSS v5.2.1 -->
         <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link rel="stylesheet" href="../scss/custom.css">
-      
+
+        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+
+
+
+
     </head>
 
 <body style="background-color: black;">
@@ -111,29 +117,38 @@
   </header> 
   <section>
     <article>
+       
       <div class="container">
         <div class="row">
-          <div class="col-md-6 offset-md-3">
-            <form>
+          <div class="col-md-6 ">
+            <form id="myForm">
+              <div class="form-group">
               <div class="mb-3">
-                <label for="exampleInputNombre" class="form-label parrafo-color">Nombre</label>
-                <input type="text" class="form-control" id="Input-nombre">
+                  <label for="apellido" class="form-label parrafo-color" >Apellido</label>
+                  <input type="text" class="form-control" id="apellido">
               </div>
               <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label parrafo-color">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <label for="nombre" class="form-label parrafo-color" >Nombre</label>
+                <input type="text" class="form-control" id="nombre">
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label parrafo-color">Email</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
                 <div id="emailHelp" class="form-text parrafo-color">We'll never share your email with anyone else.</div>
               </div>
               <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label parrafo-color">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
+                <label for="comentario" class="form-label parrafo-color" >Comentario</label>
+                <textarea class="form-control" id="comentario" rows="3"></textarea>
               </div>
-              <button type="submit" class="btn btn-primary parrafo-color">Submit</button>
+              <button type="submit" class="btn btn-primary parrafo-color" onclick="enviarCorreo()">Enviar</button>
+             </div> 
             </form>
           </div>
         </div>
       </div>
+
     </article>
+
     <article title="Pulicidad">
     <div class="container-fluid">
       <div class="row align-items-center">
@@ -194,14 +209,13 @@
   </footer> 
 
 <!-- Bootstrap JavaScript Libraries -->
+
 <script src="../js/bootstrap.bundle.min.js"></script>
-<script src="../js/miScript.js"></script>
 <script src="../https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-<script>
-  $(document).ready(function() {
-      $('#staticBackdrop').modal('show');
-  });
-  </script>
+<script src="../js/miScript.js"></script>
+    
+
+</body>
 
 </html>
