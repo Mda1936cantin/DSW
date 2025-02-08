@@ -712,9 +712,7 @@
                 "qrCode": "https://assets.dummyjson.com/public/qr-code.png"
             },
             "images": [
-                "https://cdn.dummyjson.com/products/images/furniture/Annibale%20Colombo%20Sofa/1.png",
-                "https://cdn.dummyjson.com/products/images/furniture/Annibale%20Colombo%20Sofa/2.png",
-                "https://cdn.dummyjson.com/products/images/furniture/Annibale%20Colombo%20Sofa/3.png"
+                "../Imagenes/buzo arquero niño.jpg"
             ],
             "thumbnail": "https://cdn.dummyjson.com/products/images/furniture/Annibale%20Colombo%20Sofa/thumbnail.png"
         },
@@ -774,9 +772,7 @@
                 "qrCode": "https://assets.dummyjson.com/public/qr-code.png"
             },
             "images": [
-                "https://cdn.dummyjson.com/products/images/furniture/Bedside%20Table%20African%20Cherry/1.png",
-                "https://cdn.dummyjson.com/products/images/furniture/Bedside%20Table%20African%20Cherry/2.png",
-                "https://cdn.dummyjson.com/products/images/furniture/Bedside%20Table%20African%20Cherry/3.png"
+                "../Imagenes/buzo arquero niño 2.jpg"
             ],
             "thumbnail": "https://cdn.dummyjson.com/products/images/furniture/Bedside%20Table%20African%20Cherry/thumbnail.png"
         },
@@ -836,9 +832,7 @@
                 "qrCode": "https://assets.dummyjson.com/public/qr-code.png"
             },
             "images": [
-                "https://cdn.dummyjson.com/products/images/furniture/Knoll%20Saarinen%20Executive%20Conference%20Chair/1.png",
-                "https://cdn.dummyjson.com/products/images/furniture/Knoll%20Saarinen%20Executive%20Conference%20Chair/2.png",
-                "https://cdn.dummyjson.com/products/images/furniture/Knoll%20Saarinen%20Executive%20Conference%20Chair/3.png"
+                "../Imagenes/BUZO-DE-ARQUERO-RETRO-GOYCOCHEA-65652429711b7.jpg"
             ],
             "thumbnail": "https://cdn.dummyjson.com/products/images/furniture/Knoll%20Saarinen%20Executive%20Conference%20Chair/thumbnail.png"
         },
@@ -898,9 +892,7 @@
                 "qrCode": "https://assets.dummyjson.com/public/qr-code.png"
             },
             "images": [
-                "https://cdn.dummyjson.com/products/images/furniture/Wooden%20Bathroom%20Sink%20With%20Mirror/1.png",
-                "https://cdn.dummyjson.com/products/images/furniture/Wooden%20Bathroom%20Sink%20With%20Mirror/2.png",
-                "https://cdn.dummyjson.com/products/images/furniture/Wooden%20Bathroom%20Sink%20With%20Mirror/3.png"
+               "../Imagenes/Calza GFC.webp"
             ],
             "thumbnail": "https://cdn.dummyjson.com/products/images/furniture/Wooden%20Bathroom%20Sink%20With%20Mirror/thumbnail.png"
         }
