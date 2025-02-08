@@ -1,0 +1,112 @@
+@import "bootstrap";
+@import "bootstrap-grid";
+@import "bootstrap-reboot";
+@import "bootstrap-utilities";
+
+
+// Variables
+$color-p:white;
+$primary:red;
+$color-footer:gray;
+
+
+
+.parrafo-color{ 
+text-align:start; 
+align-content: start;   
+color: $color-p;
+margin-right: 20%;
+padding-left: 5%;
+padding-right: 5%;
+@media (max-width:768px) {
+  text-align:center; 
+  align-content: center;   
+  color: $color-p;
+  margin-right: 0%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+}
+
+.Logo{   
+  color:white;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: large;
+  }
+
+
+.body-background{
+ background-image: url(../Imagenes/background.jpg);
+ background-size: contain;
+}
+
+// Mixin para estilos comunes de los encabezados
+@mixin header-styles {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700; 
+}
+
+h7 {
+  @include header-styles;
+  color: $color-footer;
+  text-align:start;
+  padding-left: 5%;
+  padding-right: 5%;
+  // Pseudo-clase para el estado :hover
+  &:hover {
+    color: #494848;
+  }
+}
+
+// Crear una nueva clase basada en img-fluid con estilos adicionales
+.grilla-image {
+  @extend .img-fluid; // Hereda los estilos de img-fluid
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  width: 300px;
+  height: 250px;
+  text-align: center;
+  @media (max-width:768px) {
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+  }
+
+}
+.promos-image {
+  @extend .img-fluid; // Hereda los estilos de img-fluid
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  width: 100px;
+  height: 100px;
+  text-align: center;
+}
+.logos-image {
+  @extend .img-fluid; // Hereda los estilos de img-fluid
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  text-justify: distribute;
+}
+
+.carrito-image {
+  @extend .img-fluid; // Hereda los estilos de img-fluid
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  text-justify: distribute;
+}
+  
+
+  

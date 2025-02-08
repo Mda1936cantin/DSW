@@ -1,69 +1,69 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <title>Guantes e Indumentaria para arqueros de futbol</title>
-        <meta name="description" content="Venta y elavoracion de guantes de arqueros juveniles e infantilas, Indumentaria deportiva para jovenes y niños">
-        <meta name="keywords" content="Guantes de arquero, Arqueros de futbol, indumentaria deportiva, jovenes, niños ">
-        <meta name="robots" content="index, follow">
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- Bootstrap CSS v5.2.1 -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="scss/custom.css">
-      
-    </head>
+
+<head>
+  <title>Guantes e Indumentaria para arqueros de futbol</title>
+  <meta name="description"
+    content="Venta y elavoracion de guantes de arqueros juveniles e infantilas, Indumentaria deportiva para jovenes y niños">
+  <meta name="keywords" content="Guantes de arquero, Arqueros de futbol, indumentaria deportiva, jovenes, niños ">
+  <meta name="robots" content="index, follow">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link rel="stylesheet" href="../css/custom.css"><!--Archivo personalizado Bootstrap-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
 
 <body style="background-color: black;">
-   
-    <!-- 
-    <button id="agregarProducto">Agregar Producto</button>                
-    <button onclick="agregarAlCarrito({ nombre: 'Camiseta', precio: 20 })">Agregar al carrito</button>
-    <button onclick="limpiarCarrito()">limpiar carrito</button>
-    <button onclick="calcularTotalCarrito()">Calcular Total</button>
-    <div id="totalCarrito" style="color: aliceblue;"></div>
-     -->
 
+<header>
     <div class="container-fluid m-0 p-0">        
       <div class="row">
+        
         <div class="col-12 order-md-2">
           <nav class="navbar navbar-expand-sm navbar-light bg-primary ">
             <div class="container-fluid">
-              
-              
+                         
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
 
-               <form class="d-md-inline d-md-none">                              
-                <img src="Imagenes/carro de compras.png" alt="carro de compras">                         
+               
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">                
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item"><a href="../index.html"><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="tooltip" title="Vuelve a la pagina de inicio">Home</button></a></li>           
+                  
+                  <li class="nav-item"><a href="../secciones/productos.html"><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="tooltip" title="Ingresa a nuestra lista de productos y personalizaciones, desde aqui">Productos</button></a></li>
+                  <li class="nav-item"><a href="../secciones/promociones.html"><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="tooltip" title="Descubre nuestras promociones bancarias y financieras, desde aqui">Promociones</button></a></li>
+                  <li class="nav-item"><a href="../secciones/contacto.html"><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="tooltip" title="Para contactarnos utliliza el siguiente formulario, desde aqui">Contacto</button></a></li>
+                 </ul>             
+              </div> 
+             
+            <div style="padding-right: 3%;"> 
+              <form class="d-flex d-md-none">
+                <button class="btn btn-outline-success btn-sm" type="button" data-bs-toggle="tooltip" title="Buscador de productos" id="searchButton">
+                  <i class="fas fa-search"></i>
+                </button>
               </form>
 
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item"><a href="secciones/empresa.html"><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="tooltip" title="Descubre todo sobre nuestra empresa y nuestra historia, desde aqui">La Empresa</button></a></li>
-                  <li class="nav-item"><a href="secciones/empresa.html"><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="tooltip" title="Ingresa a nuestra lista de productos y personalizaciones, desde aqui">Productos</button></a></li>
-                  <li class="nav-item"><a href="secciones/empresa.html"><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="tooltip" title="Descubre nuestras promociones bancarias y financieras, desde aqui">Promociones</button></a></li>
-                  <li class="nav-item"><a href="secciones/contacto.html"><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="tooltip" title="Para contactarnos utliliza el siguiente formulario, desde aqui">Contacto</button></a></li>
-                 </ul> 
-                  <form class="d-none d-md-flex">
+                <form class="d-none d-md-flex search-form" id="searchForm">
                   <input class="form-control me-2 form-control-sm" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success btn-sm" type="submit" data-bs-toggle="tooltip" title="Buscador de productos">Buscar</button>                                    
-                 <!-- 
-                 <p class="parrafo-color-p"><span id="precioTotal" >$0.0</span></p>                                
-                 <p class="parrafo-color-p"><ul id="carrito"></ul></p> 
-                 -->
-                                               
-                  <img src="Imagenes/carro de compras.png" alt="carro de compras">
-                </form> 
-                
-                
-              </div>
+                  <button class="btn btn-outline-success btn-sm " type="submit" data-bs-toggle="tooltip" title="Buscador de productos">Buscar</button>
+                </form>
+            </div> 
 
-             
-
+            <button class="btn btn btn-sm d-none d-sm-flex " id="mostrarCarrito">                       
+              <img src="../Imagenes/carro de compras.png" alt="carro de compras" style="height: 35px; width:35px; border-radius: 10px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);">
+            </button>
+                               
             </div>
+            
+
           </nav> 
+
         </div>
 
         <div class="col-12 order-md-1">
@@ -75,13 +75,13 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <a href="https://www.tigersocceracademy1.com/"><img src="Imagenes/banner1.png" class="d-block w-100" alt="banner1"></a>
+                <a href="https://www.tigersocceracademy1.com/"><img src="../Imagenes/banner1.png" class="d-block w-100" alt="banner1"></a>
               </div>
               <div class="carousel-item">
-               <a href="https://afa-internacional.com/"> <img src="Imagenes/banner2.png" class="d-block w-100" alt="banner2"></a>
+               <a href="https://afa-internacional.com/"> <img src="../Imagenes/banner2.png" class="d-block w-100" alt="banner2"></a>
               </div>
               <div class="carousel-item">
-                <a href="https://arquerosenred.com.ar/"><img src="Imagenes/banner3.png" class="d-block w-100" alt="banner3"></a>
+                <a href="https://arquerosenred.com.ar/"><img src="../Imagenes/banner3.png" class="d-block w-100" alt="banner3"></a>
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -97,127 +97,170 @@
     
       </div>     
     </div> 
+</header> 
 
-  <header>
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="staticBackdropLabel">¡Atención!</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <p>Este es un anuncio importante. ¡No te lo pierdas!</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-            <button type="button" class="btn btn-primary">Más información</button>
-          </div>
-        </div>
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">¡Atención!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-    </div>  
-  </header> 
-  <section>
-    <article>
-      <div class="container-flex body-background ">
-        <div class="row align-items-center ">
-            <div class="col-12 col-md-6 text-center"><a href="secciones/productos.html"><img src="Imagenes/Kids 3.jpg" class="grilla-image" alt="Guantes pro 1"></a> </div>
-            <div class="col-12 col-md-6 d-none d-md-inline" >
-              <h1 class="parrafo-color" style="text-align: start;">DRB white elite</h1>
-              <p style="text-align: start; margin-right: 20%;" class="parrafo-color">Los nuevos guantes de Driblin con latex, proporcionan un agarre extra fuerte.</p>
-            </div>
-            <div class="col-12 col-md-6 d-none d-md-inline " >
-              <h1 class="parrafo-color" style="text-align: end;">Reuch pro</h1><p style="text-align: end; margin-left: 20%;" class="parrafo-color">Nuevos Reuch edicion especial Franco Armani</p>
-            </div> 
-            <div class="col-12 col-md-6 text-center "><a href="secciones/productos.html"><img src="Imagenes/Modelos pro 2.jpeg" class="grilla-image" alt="Guantes pro 2"></a></div> 
-            <div class="col-12 col-md-6 text-center "><a href="secciones/productos.html"><img src="Imagenes/Modelos pro 3.jpeg" class="grilla-image" alt="Guantes pro 3"></a></div>
-            <div class="col-12 col-md-6 d-none d-md-inline " >
-              <h1 class="parrafo-color" style="text-align: start;">Reuch basic</h1>
-              <p style="text-align: start; margin-right: 20%;" class="parrafo-color">Guantes Reuch de entrenamiento, fuertes y duraderos</p>
-            </div>
-            <div class="col-12 col-md-6 d-none d-md-inline">
-              <h1 class="parrafo-color" style="text-align: end;">LGK Inicio</h1><p style="text-align: end; margin-left: 20%;" class="parrafo-color">los guantes ideales para iniciarse el la practica deportiva, comodos fuertes y economicos</p>
-            </div> 
-            <div class="col-12 col-md-6 text-center"><a href="secciones/productos.html"><img src="Imagenes/Kids 4.jpg" class="grilla-image"  alt="Guantes kids 4"></a></div>
-            <div class="col-12 col-md-6 text-center"><a href="secciones/productos.html"><img src="Imagenes/Kids 5.jpeg" class="grilla-image" alt="Guantes kids 5"></a></div>
-            <div class="col-12 col-md-6 d-none d-md-inline " >
-              <h1 class="parrafo-color" style="text-align: start;">LGK Kids</h1><p style="text-align: start; margin-right: 20%;" class="parrafo-color">Guantes todo terreno con proteccion superior, para partidos y entrenamientos en diferentes superficies.</p>
-            </div>
-            <div class="col-12 col-md-6 d-none d-md-inline " >
-              <h1 class="parrafo-color" style="text-align: end;">LGK Kids Pro</h1><p style="text-align: end; margin-left: 20%;" class="parrafo-color">Los guantes ideales para tus partidos exigentes, extra agarre, y varillas protectoras.</p>
-            </div> 
-            <div class="col-12 col-md-6 text-center"><a href="secciones/productos.html"><img src="Imagenes/Kids 6.jpeg" class="grilla-image"  alt="Guantes kids 6"></a></div>         
-        </div>
-     </div>
-    </article>
-    <article title="Pulicidad">
-    <div class="container-fluid">
-      <div class="row align-items-center">
-        <div class="col"><img src="Imagenes/Gif 2.gif" class="img-fluid" alt="banner 2"></div>
+      <div class="modal-body">
+        <img src="../Imagenes/black friday.png" class="img-fluid">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Más información</button>
       </div>
     </div>
-    </article>
-    <article title="vista de promos">
-    <div class="container-fluid"style="background-color: red;">
-        <div class="row align-items-center">
-            <div class="col-3 text-center"><img src="Imagenes/mercado pago.png" alt="Mercado pago" class="promos-image"></div>  
-            <div class="col-3 text-center"><img src="Imagenes/banco nacion.jpeg" alt="Mercado pago" class="promos-image"></div>                       
-            <div class="col-3 text-center"><img src="Imagenes/cuenta DNI.jpg" alt="Mercado pago" class="promos-image"></div>                               
-            <div class="col-3 text-center"><img src="Imagenes/ahora 3y6.jpg" alt="Mercado pago" class="promos-image"></div>       
-           
-          </div>
-    </div> 
-    </article>
-  </section>
-  <footer>
-    <div class="container-fluid mt-2 ">      
-      <div class="row align-items-center">       
+  </div>
+</div>   
+
+<section>
+  <article>
+    <div class="container-flex">
+      <div class="row align-items-center ">
+          <div class="col-12 col-md-6 text-center"><img src="../Imagenes/IMG-20220611-WA0008(2).jpg" class="grilla-image" alt="Historia y comienzos de la empresa"></div>
+          <div class="col-12 col-md-6 col-md-text-center" >
+            <h1 class="parrafo-color">Little GoalKeaper</h1>
+            <p  class="parrafo-color">Empresa fundada en el año 2014, por Acosta Matias, ex jugador profesional de futbol y entrenador de futbol infanto-juvenil.
+              LGK, se creó pensando en ocupar ese espacio creciente de un segmento deportivo en auge como es el de arquero de futbol, y en el área juvenil e infantil, compitiendo con grandes marcas internacionales, ofreciendo una calidad y variedad para todos los gustos y bolsillos.
+              Sus talleres están ubicados en el parque industrial norte de la ciudad de San Nicolás, prov. Buenos Aires, con locales comerciales en san Nicolás, Rosario y Pergamino, y presencia nacional a través de sus plataformas de internet, LGK se posiciona como una de las empresas más fuertes del sector indumentaria deportiva para jóvenes, niños y niñas.
+              LGK busca llegar a toda la sociedad, por eso tiene su programa L-help, que recibe guantes y botines de futbol y los reacondiciona en sus talles, para ser donados en equipos de ligas de baby futbol y futbol infantil de la zona, con el objetivo de que todos los niños y niñas tengan las mismas posibilidades de disfrutar del deporte. 
+              </p>
+          </div>         
+      </div>
+   </div>
+  </article>
+
+  <article title="Pulicidad">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col"><img src="../Imagenes/Gif 2.gif" class="img-fluid" alt="banner 2"></div>
+    </div>
+  </div>
+  </article>
+  <article title="vista de promos">
+  <div class="container-fluid"style="background-color: red;">
+      <div class="row align-items-center">
+          <div class="col-3 text-center"><img src="../Imagenes/mercado pago.png" alt="Mercado pago" class="promos-image"></div>  
+          <div class="col-3 text-center"><img src="../Imagenes/banco nacion.jpeg" alt="Mercado pago" class="promos-image"></div>                       
+          <div class="col-3 text-center"><img src="../Imagenes/cuenta DNI.jpg" alt="Mercado pago" class="promos-image"></div>                               
+          <div class="col-3 text-center"><img src="../Imagenes/ahora 3y6.jpg" alt="Mercado pago" class="promos-image"></div>       
+         
+        </div>
+  </div> 
+  </article>
+</section>
+
+<footer>
+    <div class="container-fluid mt-2 ">
+      <div class="row align-items-center">
         <div class="col text-center d-none d-md-inline">
 
           <div class="container-fluid">
-           <div class="row align-items-start">                                        
-            <div class="col-3 d-none d-md-inline"><h7>Atencion al cliente</h7></div>
-            <div class="col-3 d-none d-md-inline"><h7>Tienda on line</h7></div>
-            <div class="col-3 d-none d-md-inline"><h7>La Empresa</h7></div>
-            <div class="col-3 d-none d-md-inline"><h7>Contacto</h7></div>
-            <div class="col-3 d-none d-md-inline"><p style="font-size: x-small;" class="parrafo-color">Politica de envios</p></div>
-            <div class="col-3 d-none d-md-inline"><p style="font-size: x-small;" class="parrafo-color">Diseño personalizado</p></div>
-            <div class="col-3 d-none d-md-inline"><p style="font-size: x-small;" class="parrafo-color">Nuestra historia</p></div>
-            <div class="col-3 d-none d-md-inline"><p style="font-size: x-small;" class="parrafo-color">Form contacto</p></div> 
-            <div class="col-3 d-none d-md-inline"><p style="font-size: x-small;" class="parrafo-color">Pagos y Promociones</p></div>
-            <div class="col-3 d-none d-md-inline"><p style="font-size: x-small;" class="parrafo-color">Productos propios</p></div>
-            <div class="col-3 d-none d-md-inline"><p style="font-size: x-small;" class="parrafo-color">Locales</p></div>
-            <div class="col-3 d-none d-md-inline"><p style="font-size: x-small;" class="parrafo-color">Sumate</p></div>
-            <div class="col-3 d-none d-md-inline"><p style="font-size: x-small;" class="parrafo-color">Seguridad de paquetes</p></div>
-            <div class="col-3 d-none d-md-inline"><p style="font-size: x-small;" class="parrafo-color">Productos nacionales</p></div>
-            <div class="col-3 d-none d-md-inline"><p style="font-size: x-small;" class="parrafo-color"></p></div>
-            <div class="col-3 d-none d-md-inline"><p style="font-size: x-small;" class="parrafo-color"></p></div> 
-            <div class="col-3 d-none d-md-inline"><p style="font-size: x-small;" class="parrafo-color">Cambios y devoluciones</p></div>
-            <div class="col-3 d-none d-md-inline"><p style="font-size: x-small;" class="parrafo-color">Productos internacionales</p></div>
-            <div class="col-3 d-none d-md-inline"><p style="font-size: x-small;" class="parrafo-color"></p></div>
-            <div class="col-3 d-none d-md-inline"><p style="font-size: x-small;" class="parrafo-color"></p></div> 
-            <div class="col-3 d-none d-md-inline"><p style="font-size: x-small;" class="parrafo-color">Politicas de privacidad</p></div>
-            <div class="col-3 d-none d-md-inline"><p style="font-size: x-small;" class="parrafo-color">Accesorios</p></div> 
-           </div>
-          </div>  
+            <div class="row align-items-start">
+              <div class="col-3 d-none d-md-inline">
+                <h7>Atencion al cliente</h7>
+              </div>
+              <div class="col-3 d-none d-md-inline">
+                <h7>Tienda on line</h7>
+              </div>
+              <div class="col-3 d-none d-md-inline">
+                <h7>La Empresa</h7>
+              </div>
+              <div class="col-3 d-none d-md-inline">
+                <h7>Contacto</h7>
+              </div>
+              <div class="col-3 d-none d-md-inline">
+                <p style="font-size: x-small;" class="parrafo-color">Politica de envios</p>
+              </div>
+              <div class="col-3 d-none d-md-inline">
+                <p style="font-size: x-small;" class="parrafo-color">Diseño personalizado</p>
+              </div>
+              <div class="col-3 d-none d-md-inline">
+                <p style="font-size: x-small;" class="parrafo-color">Nuestra historia</p>
+              </div>
+              <div class="col-3 d-none d-md-inline">
+                <p style="font-size: x-small;" class="parrafo-color">Form contacto</p>
+              </div>
+              <div class="col-3 d-none d-md-inline">
+                <p style="font-size: x-small;" class="parrafo-color">Pagos y Promociones</p>
+              </div>
+              <div class="col-3 d-none d-md-inline">
+                <p style="font-size: x-small;" class="parrafo-color">Productos propios</p>
+              </div>
+              <div class="col-3 d-none d-md-inline">
+                <p style="font-size: x-small;" class="parrafo-color">Locales</p>
+              </div>
+              <div class="col-3 d-none d-md-inline">
+                <p style="font-size: x-small;" class="parrafo-color">Sumate</p>
+              </div>
+              <div class="col-3 d-none d-md-inline">
+                <p style="font-size: x-small;" class="parrafo-color">Seguridad de paquetes</p>
+              </div>
+              <div class="col-3 d-none d-md-inline">
+                <p style="font-size: x-small;" class="parrafo-color">Productos nacionales</p>
+              </div>
+              <div class="col-3 d-none d-md-inline">
+                <p style="font-size: x-small;" class="parrafo-color"></p>
+              </div>
+              <div class="col-3 d-none d-md-inline">
+                <p style="font-size: x-small;" class="parrafo-color"></p>
+              </div>
+              <div class="col-3 d-none d-md-inline">
+                <p style="font-size: x-small;" class="parrafo-color">Cambios y devoluciones</p>
+              </div>
+              <div class="col-3 d-none d-md-inline">
+                <p style="font-size: x-small;" class="parrafo-color">Productos internacionales</p>
+              </div>
+              <div class="col-3 d-none d-md-inline">
+                <p style="font-size: x-small;" class="parrafo-color"></p>
+              </div>
+              <div class="col-3 d-none d-md-inline">
+                <p style="font-size: x-small;" class="parrafo-color"></p>
+              </div>
+              <div class="col-3 d-none d-md-inline">
+                <p style="font-size: x-small;" class="parrafo-color">Politicas de privacidad</p>
+              </div>
+              <div class="col-3 d-none d-md-inline">
+                <p style="font-size: x-small;" class="parrafo-color">Accesorios</p>
+              </div>
+            </div>
+          </div>
 
         </div>
-        <div class="col text-center d-md-none "><img src="Imagenes/redes sociales.png" class="logos-image" alt="Redes Sociales"></div>
-        <div class="col text-center col-md-2"><img src="Imagenes/Commons_QR_code.png" class="logos-image" alt="QR"></div> 
-        <div class="col text-center col-md-2"><img src="Imagenes/Logo de Nombre con Iniciales Circular Tipográfico Blanco y Negro.gif" class="logos-image" alt="Logo"></div>                                        
+        <div class="col text-center d-md-none "><img src="../Imagenes/redes sociales.png" class="logos-image"
+            alt="Redes Sociales"></div>
+        <div class="col text-center col-md-2"><img src="../Imagenes/Commons_QR_code.png" class="logos-image" alt="QR">
+        </div>
+        <div class="col text-center col-md-2"><img
+            src="../Imagenes/Logo de Nombre con Iniciales Circular Tipográfico Blanco y Negro.gif" class="logos-image"
+            alt="Logo"></div>
       </div>
-    </div>             
-  </footer> 
+    </div>
+</footer>
 
 <!-- Bootstrap JavaScript Libraries -->
-<script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/miScript.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<!--Ventana Modal para publicidad o Informacion--> 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
 <script>
   $(document).ready(function() {
       $('#staticBackdrop').modal('show');
   });
-  </script>
+</script>
+<!--Script para la lupa del boton buscar--> 
+<script>
+  const searchButton = document.getElementById('searchButton');
+  const searchForm = document.getElementById('searchForm');
 
+  searchButton.addEventListener('click', () => {
+    searchForm.classList.toggle('d-none'); // Oculta/muestra el formulario
+    searchForm.classList.toggle('d-flex'); // Cambia a flex para mostrarlo
+  });
+</script>
+<!--**************************************************-->
+</body>
 </html>
